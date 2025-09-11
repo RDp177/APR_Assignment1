@@ -115,15 +115,24 @@ The combined model successfully predicts complete MBTI types from text samples, 
 **Applications**
 
 This personality prediction system could be applied to:
+
 • Personalized content recommendations
+
 • Team composition and dynamics analysis
+
 • Customer service personalization
+
 • Career guidance based on communication style
+
 • Enhanced user experience in digital products
 
 
 **Limitations**
+
 • Relies on self-reported MBTI types which may not always be accurate
+
 • Dataset imbalance affects model performance for underrepresented types
+
 • Text-based prediction captures only the linguistic aspects of personality
+
 • Cultural and linguistic variations may affect prediction accuracy
