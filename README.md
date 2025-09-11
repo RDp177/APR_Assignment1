@@ -1,6 +1,6 @@
-Personality Prediction from Text
-
-Project Overview
+**Personality Prediction from Text**
+-
+**Project Overview**
 
 This project aims to predict Myers-Briggs Type Indicator (MBTI) personality traits from text data. Using natural language processing techniques and machine learning algorithms, the system analyzes written text to classify individuals across the four MBTI dimensions:
 
@@ -13,20 +13,23 @@ This project aims to predict Myers-Briggs Type Indicator (MBTI) personality trai
 The model can predict a complete 4-letter MBTI type (e.g., INTJ, ENFP) based on a sample of written text, providing insights into personality traits from language use patterns.
 
 
-Dataset
+**Dataset**
 
 The project uses the MBTI Dataset, which contains:
+
 • Text samples (posts) from individuals
+
 • Corresponding MBTI personality types
+
 • Each entry includes multiple posts from a person labeled with their self-reported MBTI type
 
 
 The dataset shows significant class imbalance across the 16 MBTI types, with certain types (particularly those including "N" - Intuition) being overrepresented. This imbalance is addressed in the modeling approach.
 
 
-Methodology
+**Methodology**
 
-Text Preprocessing
+**Text Preprocessing**
 
 Raw text data undergoes a comprehensive cleaning pipeline:
 
@@ -38,16 +41,18 @@ Raw text data undergoes a comprehensive cleaning pipeline:
 6. **Lemmatization**: Reduces words to their root form (e.g., 'walking' \u2192 'walk')
 
 
-Feature Extraction
+**Feature Extraction**
 
 The cleaned text is transformed into numerical features using:
 
 • **TF-IDF Vectorization**: Converts text into a matrix where each row represents a document and each column represents a term
+
 • **N-gram Range**: Includes both unigrams and bigrams (1-2 word combinations)
+
 • **Vocabulary Limitation**: Restricts to the 5,000 most frequent terms to manage dimensionality
 
 
-Modeling Approach
+**Modeling Approach**
 
 The project uses a divide-and-conquer approach:
 
@@ -60,44 +65,54 @@ The project uses a divide-and-conquer approach:
 - P/J (Perceiving vs. Judging)
 
 
-Results
+**Results**
 
 The models achieved the following performance metrics:
 
 
-Mind: Introversion (I) vs. Extraversion (E)
+**Mind:** Introversion (I) vs. Extraversion (E)
+
 • **Accuracy**: 84.4%
+
 • **F1-Score**: 0.90 for Introversion, 0.68 for Extraversion
 
 
-Energy: Intuition (N) vs. Sensing (S)
+**Energy:** Intuition (N) vs. Sensing (S)
+
 • **Accuracy**: 88%
+
 • **F1-Score**: 0.93 for Intuition, 0.65 for Sensing
 
 
-Nature: Feeling (F) vs. Thinking (T)
+**Nature:** Feeling (F) vs. Thinking (T)
+
 • **Accuracy**: 85%
+
 • **F1-Score**: 0.86 for Feeling, 0.84 for Thinking
 
 
-Tactics: Perceiving (P) vs. Judging (J)
+**Tactics:** Perceiving (P) vs. Judging (J)
+
 • **Accuracy**: 80%
+
 • **F1-Score**: 0.84 for Perceiving, 0.75 for Judging
 
 
 The combined model successfully predicts complete MBTI types from text samples, as demonstrated with test cases that correctly identified:
+
 • An empathetic, community-focused text as ENTJ
+
 • A structured, responsibility-oriented text as ISTJ
 
 
-Key Insights
+**Key Insights**
 1. **Class Imbalance Impact**: The models perform better on majority classes, particularly for the N/S dimension where intuitive types are overrepresented in the dataset
 2. **Dimension Difficulty**: The P/J dimension appears to be the most challenging to predict accurately
 3. **Balanced Performance**: The F/T dimension shows the most balanced performance between classes
 4. **Text Indicators**: Certain language patterns and word choices appear strongly correlated with specific personality traits
 
 
-Applications
+**Applications**
 
 This personality prediction system could be applied to:
 • Personalized content recommendations
@@ -107,7 +122,7 @@ This personality prediction system could be applied to:
 • Enhanced user experience in digital products
 
 
-Limitations
+**Limitations**
 • Relies on self-reported MBTI types which may not always be accurate
 • Dataset imbalance affects model performance for underrepresented types
 • Text-based prediction captures only the linguistic aspects of personality
