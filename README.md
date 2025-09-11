@@ -1,8 +1,8 @@
 **Personality Prediction from Text**
 -
-**Project Overview**
+**Assignment Overview**
 -
-This project aims to predict Myers-Briggs Type Indicator (MBTI) personality traits from text data. Using natural language processing techniques and machine learning algorithms, the system analyzes written text to classify individuals across the four MBTI dimensions:
+This assignment aims to predict Myers-Briggs Type Indicator (MBTI) personality traits from text data. Using natural language processing techniques and machine learning algorithms, the system analyzes written text to classify individuals across the four MBTI dimensions:
 
 1. **Mind**: Introversion (I) vs. Extraversion (E)
 2. **Energy**: Intuition (N) vs. Sensing (S)
@@ -15,7 +15,7 @@ The model can predict a complete 4-letter MBTI type (e.g., INTJ, ENFP) based on 
 
 **Dataset**
 -
-The project uses the **MBTI Dataset**, which contains:
+The assignment uses the **MBTI Dataset**, which contains:
 
 • Text samples (posts) from individuals
 
@@ -62,7 +62,7 @@ The cleaned text is transformed into numerical features using:
 
 **Modeling Approach**
 -
-The project uses a divide-and-conquer approach:
+The assignment uses a divide-and-conquer approach:
 
 1. **Separate Binary Classifiers**: Instead of predicting all 16 MBTI types at once, four separate binary classifiers are trained - one for each MBTI dimension
 2. **Model Selection**: Logistic Regression with balanced class weights to handle class imbalance
