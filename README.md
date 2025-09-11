@@ -1,7 +1,7 @@
 **Personality Prediction from Text**
 -
 **Project Overview**
-
+-
 This project aims to predict Myers-Briggs Type Indicator (MBTI) personality traits from text data. Using natural language processing techniques and machine learning algorithms, the system analyzes written text to classify individuals across the four MBTI dimensions:
 
 1. **Mind**: Introversion (I) vs. Extraversion (E)
@@ -14,7 +14,7 @@ The model can predict a complete 4-letter MBTI type (e.g., INTJ, ENFP) based on 
 
 
 **Dataset**
-
+-
 The project uses the MBTI Dataset, which contains:
 
 • Text samples (posts) from individuals
@@ -28,9 +28,9 @@ The dataset shows significant class imbalance across the 16 MBTI types, with cer
 
 
 **Methodology**
-
+-
 **Text Preprocessing**
-
+-
 Raw text data undergoes a comprehensive cleaning pipeline:
 
 1. **URL Removal**: Eliminates web links that don't contribute to personality analysis
@@ -42,7 +42,7 @@ Raw text data undergoes a comprehensive cleaning pipeline:
 
 
 **Feature Extraction**
-
+-
 The cleaned text is transformed into numerical features using:
 
 • **TF-IDF Vectorization**: Converts text into a matrix where each row represents a document and each column represents a term
@@ -53,7 +53,7 @@ The cleaned text is transformed into numerical features using:
 
 
 **Modeling Approach**
-
+-
 The project uses a divide-and-conquer approach:
 
 1. **Separate Binary Classifiers**: Instead of predicting all 16 MBTI types at once, four separate binary classifiers are trained - one for each MBTI dimension
@@ -66,7 +66,7 @@ The project uses a divide-and-conquer approach:
 
 
 **Results**
-
+-
 The models achieved the following performance metrics:
 
 
@@ -106,6 +106,7 @@ The combined model successfully predicts complete MBTI types from text samples, 
 
 
 **Key Insights**
+-
 1. **Class Imbalance Impact**: The models perform better on majority classes, particularly for the N/S dimension where intuitive types are overrepresented in the dataset
 2. **Dimension Difficulty**: The P/J dimension appears to be the most challenging to predict accurately
 3. **Balanced Performance**: The F/T dimension shows the most balanced performance between classes
@@ -113,7 +114,7 @@ The combined model successfully predicts complete MBTI types from text samples, 
 
 
 **Applications**
-
+-
 This personality prediction system could be applied to:
 
 • Personalized content recommendations
@@ -128,7 +129,7 @@ This personality prediction system could be applied to:
 
 
 **Limitations**
-
+-
 • Relies on self-reported MBTI types which may not always be accurate
 
 • Dataset imbalance affects model performance for underrepresented types
