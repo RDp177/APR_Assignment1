@@ -26,6 +26,14 @@ The project uses the **MBTI Dataset**, which contains:
 
 The dataset shows significant class imbalance across the 16 MBTI types, with certain types (particularly those including "N" - Intuition) being overrepresented. This imbalance is addressed in the modeling approach.
 
+**Content**
+This dataset contains over 8600 rows of data, on each row is a person’s:
+
+- Type (This persons 4 letter MBTI code/type)
+- A section of each of the last 50 things they have posted (Each entry separated by "|||" (3 pipe characters))
+
+**Source**:
+https://www.kaggle.com/datasets/datasnaek/MBTI-type/data
 
 **Methodology**
 -
