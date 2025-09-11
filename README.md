@@ -15,7 +15,7 @@ The model can predict a complete 4-letter MBTI type (e.g., INTJ, ENFP) based on 
 
 **Dataset**
 -
-The project uses the MBTI Dataset, which contains:
+The project uses the **MBTI Dataset**, which contains:
 
 • Text samples (posts) from individuals
 
